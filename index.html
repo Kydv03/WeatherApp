@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">☼</span>
+      <span class="brand-name">Weather</span>
+      <span class="location">Delhi, Delhi <span class="temp">30°C</span></span>
+    </div>
+
+    <div class="actions">
+      <div class="searchbar">
+        <input type="text" placeholder="Address, City or Zip Code" />
+        <button class="select">Location ▾</button>
+      </div>
+      <button class="icon-btn" aria-label="Menu">≡</button>
+    </div>
+  </header>
+  <nav class="tabs">
+    <button class="tab active">Today</button>
+    <button class="tab">Hourly</button>
+    <button class="tab">Daily</button>
+    <button class="tab">Radar</button>
+    <button class="tab">Monthly</button>
+    <button class="tab">Air Quality</button>
+    <button class="tab">Health & Activities</button>
+  </nav>
+   <div class="coverPhoto">
+    <div class="overtext">
+  <div class="overlay-box">Your City, Your Weather</div>
+</div>
+
+   </div>
+  <main class="container">
+    <section class="main-col">
+       
+        <article class="card today">
+        <header class="card-head">
+          <div>
+            <h3>Today’s Weather</h3>
+            <p class="muted">Sun, Aug 31</p>
+          </div>
+          <div class="hi-lo">
+            <span>Hi: <strong>30°</strong></span>
+            <span>Lo: <strong>25°</strong></span>
+          </div>
+        </header>
+
+        <div class="today-body">
+          <div class="today-left">
+            <div class="big-temp">
+              <span class="emoji"></span>
+              <span class="value"></span>
+            </div>
+            <p class="desc"></p>
+            <ul class="facts">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="today-right">
+            <div class="mini-hour">
+              <div class="hour"><span></span><span></span><b></b></div>
+              <div class="hour"><span></span><span></span><b></b></div>
+              <div class="hour"><span></span><span></span><b></b></div>
+              <div class="hour"><span></span><span></span><b></b></div>
+              <div class="hour"><span></span><span></span><b></b></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="side-col">
+      <div class="card side-card">
+          <h4>Air Quality</h4>
+          <p>Loading...</p>
+          <div class="bar">
+          <span style="width:0%"></span>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="footer">
+    <span>© 2025 Weather Demo</span>
+    <nav class="foot-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">About</a>
+    </nav>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>
